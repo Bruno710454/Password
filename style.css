@@ -1,0 +1,215 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    transition: all 1s ease;
+}
+
+.body-1 {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: slateblue;
+    background-image: linear-gradient(to right ,#820AD1,rgb(125, 110, 228) );
+
+
+}
+
+
+.main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    padding: 50px;
+    width: 900px;
+}
+
+
+
+
+.logo-in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px;
+    background-color: white;
+    height: 200px;
+    border-radius: 10px;
+}
+
+#email {
+    width: 250px;
+    border-color: none;
+    outline-width: 0px;
+    height: 25px;
+    border-radius: 8px;
+    border-width: 1px;
+}
+   
+
+#password {
+    width: 250px;
+    border-color: #b1b1b1;
+    outline-width: 0px;
+    height: 25px;
+    border-radius: 8px;
+    border-width: 1px;
+}
+
+.btn{
+    background-color: slateblue;
+    padding: 10px;
+    width: 150px;
+    color: white;
+    text-decoration: none;
+    outline-width: 0px;
+    border-radius: 10px;
+}
+
+
+/*
+PAGINA 1 
+*/
+
+.tudo {
+    margin: auto;
+    width: 1100px;
+    transition: 0.5s;
+}
+
+header {
+    background-image: linear-gradient(to right ,#820AD1,rgb(125, 110, 228) );
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    margin-bottom: 100px;
+}
+
+.main-p {
+    display: flex;
+    justify-content: center;
+    flex-direction:column ;
+    background-color: slateblue;
+    width: 1100px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    height: auto;
+}
+
+.senhas {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: slateblue;
+    width: 1100px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    margin-top: 100px;
+    
+
+}
+
+.img {
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.img:hover {
+    background-color: rgb(141, 130, 214);
+    border-radius: 10px;
+}
+
+.senha-display {
+    display: flex;
+    align-items: center;
+
+}
+
+.ver {
+    text-align: center;
+    letter-spacing: 10px;
+    display: none;
+}
+
+.main-input {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.main-input-2 {
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
+    gap: 30px;
+    padding: 20px;
+    display: none;
+    transition: 0.5s;
+
+}
+
+.open {
+    display: block;
+    transition: ease-in-out;
+}
+
+.criar {
+    padding: 15px;
+}
+.criar:hover {
+    background-color: #b1b1b1;
+    transition: 1s;
+    border-radius: 3px;
+}
+
+#container {
+    display: flex;
+    width: 300px;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+#main {
+    transition: all 1s ease;
+
+}
+
+.open2 {
+    display: block;
+}
+
+.body-2 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+footer {
+    flex: 1;
+    background-color: #343434;
+    width: auto;
+    margin-top: 100px;
+
+}
+
+.teste {
+    transition: all 1s ease-in-out;
+}
+

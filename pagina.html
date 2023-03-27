@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body-2">
+    <header><h1>PASSWORD.COM</h1></header>
+    <div class="tudo">
+        <main class="main-p"  id="all">
+                <div class="main-input">
+                    <div class="criar" onclick="expandir()">CRIAR +</div>
+                </div>
+                <div class="main-input-2" id="main">
+                    <p>Nome da nova rede</p>
+                    <input type="text" id="nomered">
+                    <p>senha da nova rede </p>
+                    <input type="text" id="senha">
+                    <button onclick="salvar()">salvar</button>
+                </div>
+        </main>
+        <section class="senhas">
+            <div class="senha-display">
+                <p>SENHAS</p>
+                <div class="img" onclick="ver()"><img src="icons8-eye-24.png" alt=""></div>
+            </div>
+            <div class="ver" id="display">
+                <h1>SENHAS</h1>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <h1>footer</h1>
+    </footer>
+    <script>
+        var c= 0
+        function expandir(){
+            let menu = document.getElementById('main')
+            if (menu.classList.contains('open')) {
+                menu.classList.remove('open')
+            }else {
+                menu.classList.add('open')
+            }
+
+        }
+
+        function salvar(){
+            let nome = document.getElementById('nomered').value
+            let senha = document.getElementById('senha').value
+            let display = document.getElementById('display')
+            let menu = document.getElementById('main')
+            var p = document.createElement('p')
+            var p2 = document.createElement('p')
+            var div = document.createElement('div')
+            div.id='container'
+            p.innerHTML= nome
+            p2.innerHTML= senha
+            div.appendChild(p)
+            div.appendChild(p2)
+            display.appendChild(div)
+            menu.classList.remove('open')
+            document.getElementById('nomered').value=''
+            document.getElementById('senha').value=''
+            c+=1
+
+        }
+
+        function ver(){
+            if (c==0){
+                window.alert('Nenhuma senha salva no momento')
+            }else {
+                let menu2 = document.getElementById('display')
+                if (menu2.classList.contains('open2')){
+                    menu2.classList.remove('open2')
+                }else {
+                    menu2.classList.add('open2')
+                }
+
+            }
+
+        }
+        
+    </script>
+</body>
+</html>

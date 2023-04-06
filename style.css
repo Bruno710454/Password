@@ -2,7 +2,6 @@
     padding: 0px;
     margin: 0px;
     font-family: 'Roboto', sans-serif;
-    transition: all 1s ease;
 }
 
 .body-1 {    
@@ -84,7 +83,6 @@ PAGINA 1
 
 header {
     background-image: linear-gradient(to right ,#820AD1,rgb(125, 110, 228) );
-    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,6 +90,7 @@ header {
     letter-spacing: 5px;
     font-weight: lighter;
     margin-bottom: 100px;
+    padding: 15px;
 }
 
 .main-p {
@@ -123,15 +122,6 @@ header {
 
 }
 
-.img {
-    padding: 10px;
-    margin-left: 20px;
-}
-
-.img:hover {
-    background-color: rgb(141, 130, 214);
-    border-radius: 10px;
-}
 
 .senha-display {
     display: flex;
@@ -142,9 +132,9 @@ header {
 
 .ver {
     text-align: center;
+    letter-spacing: 10px;
     display: none;
-    padding: 15px;
-    color: #707070;
+    color: #7e7e7e;
 }
 
 .main-input {
@@ -158,12 +148,15 @@ header {
     flex-direction: column;
     margin: auto;
     margin-top: 30px;
-    gap: 30px;
     padding: 20px;
     display: none;
     transition: 0.5s;
-    color: #707070;
+    color: #7e7e7e;
 
+}
+
+.main-input-2 > div {
+    margin-bottom: 20px;
 }
 
 .open {
@@ -173,11 +166,6 @@ header {
 
 .criar {
     padding: 15px;
-}
-.criar:hover {
-    background-color: #b1b1b1;
-    transition: 1s;
-    border-radius: 5px;
 }
 
 #container {
@@ -213,6 +201,34 @@ footer {
 
 .teste {
     transition: all 1s ease-in-out;
+}
+
+.btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #820AD1;
+    color: white;
+    font-size: 13px;
+    margin: auto;
+    letter-spacing: 2px;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.btn2:hover {
+    background-color: #a551dd;
+    transition: 1s;
+
+}
+
+.input {
+    outline-color: #a551dd;
+    width: 200px;
+    border-radius: 6px;
+    border-width: 1px;
+    letter-spacing: 3px;
+    padding: 5px;
 }
 
 

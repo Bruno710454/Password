@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-image: linear-gradient(to right ,#820AD1,rgb(125, 110, 228) );
+        width: auto;
+        text-align: center;
+        margin: auto;
+        height: 300px;
+        padding: 80px;
+        border-radius: 10px;
+    }
+
+    .form > h1 {
+        color:white;
+        margin-bottom: 20px;
+        margin-top: -20px;
+        letter-spacing: 3px;
+    }
+
+    .input {
+        width: 300px;
+        margin: auto;
+        margin-top: 10px;
+        height: 25px;
+        border-radius: 5px;
+        border-width: 0px;
+        outline-width:0px;
+        padding: 5px;
+
+    }
+
+    .btn {
+        background-color: white;
+        width: 200px;
+        margin: auto;
+        padding: 5px;
+        margin-top: 20px;
+        border-width: 0px;
+        border-radius: 5px;
+    }
+
+</style>
+<body>
+    <form action="/add" method="post" class="form">
+        <h1>CADASTRO</h1>
+        <input type="text" placeholder="nome" class="input" name="nome" required>
+        <input type="text" placeholder="sobrenome"  class="input" name="sobrenome" required>
+        <input type="email" placeholder="email"  class="input" name="email" required>
+        <input type="password" placeholder="senha"  class="input" name="senha" required>
+        <button type="submit" class="btn">cadastrar</button>
+    </form>
+</body>
+</html>

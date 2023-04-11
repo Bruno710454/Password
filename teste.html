@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    div {
+        background-color: burlywood;
+        width: 500px;
+        margin: auto;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .label {
+        margin-top: 0px;
+        margin-left: 0px;
+        position: absolute;
+        transition: 0.5s;
+    }
+
+    .input {
+        position: absolute;
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 0px;
+        outline: none;
+    }
+
+    .input:focus~.label {
+        margin-top: -20px;
+        font-size: 13px;
+        color: blue;
+    }
+</style>
+<body>
+    <div>
+        <input type="text" class="input">
+        <p class="label">nome</p>
+    </div>
+</body>
+</html>

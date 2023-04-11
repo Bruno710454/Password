@@ -27,8 +27,8 @@
         text-align: center;
         margin: auto;
         height: 300px;
-        padding: 80px;
         border-radius: 10px;
+        padding: 80px;
     }
 
     .form > h1 {
@@ -39,7 +39,7 @@
     }
 
     .input {
-        width: 300px;
+        width: 100%;
         margin: auto;
         margin-top: 10px;
         height: 25px;
@@ -59,7 +59,23 @@
         border-width: 0px;
         border-radius: 5px;
     }
+    
 
+    @media(max-width:393px){
+        .form {
+            padding: 50px;
+        }
+        .form > h1 {
+            font-size: 20px;
+        }
+    }
+
+    
+    @media(max-width:300px){
+        .input {
+            width: auto;
+        }
+    }
 </style>
 <body>
     <form action="/add" method="post" class="form">

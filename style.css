@@ -51,7 +51,7 @@
     border-radius: 8px;
     border-width: 1px;
     padding: 5px;
-    outline-color: #820AD1;
+    outline-color: #a551dd;
 }
    
 
@@ -62,7 +62,7 @@
     border-radius: 8px;
     border-width: 1px;
     padding: 5px;
-    outline-color: #820AD1;
+    outline-color: #a551dd;
 }
 
 
@@ -121,6 +121,8 @@ PAGINA 1
     width:auto ;
     transition: 0.5s;
     padding: 15px;
+    flex: 1;
+    margin-bottom: 80px;
 }
 
 header {
@@ -234,10 +236,13 @@ header {
 }
 
 footer {
-    flex: 1;
     background-color: #343434;
     width: auto;
-    margin-top: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; 
 
 }
 
@@ -273,6 +278,10 @@ footer {
     padding: 5px;
 }
 
-
+@media (max-width:280px){
+    * {
+        font-size: 15px;
+    }
+}
 
 

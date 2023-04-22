@@ -11,7 +11,6 @@
         display: flex;
         align-items: center;
         height: 100vh;
-        background-image:linear-gradient(to left , black, rgb(54, 54, 54));
     }
 
     *{
@@ -59,6 +58,8 @@
         margin-top: 20px;
         border-width: 0px;
         border-radius: 5px;
+        text-decoration: none;
+        color: rgb(121, 120, 120);
     }
     
 
@@ -79,13 +80,14 @@
     }
 </style>
 <body>
-    <form action="/add" method="post" class="form">
+    <form class="form">
         <h1>CADASTRO</h1>
         <input type="text" placeholder="nome" class="input" name="nome" required>
         <input type="text" placeholder="sobrenome"  class="input" name="sobrenome" required>
         <input type="email" placeholder="email"  class="input" name="email" required>
         <input type="password" placeholder="senha"  class="input" name="senha" required>
-        <button type="submit" class="btn">cadastrar</button>
+        <a href="cadastrado.html" class="btn">cadastrar</a>
     </form>
 </body>
+</html>
 </html>
